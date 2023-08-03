@@ -1,0 +1,302 @@
+html {
+    font-family: 'poppins';
+    font-size: 66%;
+}
+
+body{
+    margin: 0;
+ }
+
+header{
+    margin: 0;
+    height: 70px;
+    width: 938px;
+}
+.container{
+    max-width: 90em;
+    margin: 0 auto;
+}
+
+.navbar{
+    display: grid;
+    grid-template-columns: 180px auto;
+    align-items: center;
+    height: 75px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between ;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    position: unset;
+    background: none;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 3em;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.4rem;
+    position: relative;
+} 
+
+nav ul li a.active:before{
+    position: absolute;
+    content: "";
+    width: 35%;
+    height: 1px;
+    border-bottom: 2px solid black;
+    bottom: -5px;
+} 
+
+#logo{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase ;
+    font-size: 1.6rem;
+    font-weight: bold;
+} 
+
+.primary-nav{
+    gap: 4em;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.secondary-nav{
+    background: black;
+    padding: 10px 20px;
+    border-radius: 5em;
+}
+
+.secondary-nav a{
+    margin: 0;
+    font-size: 1.2rem;
+    color: white;
+}
+
+/*HERO SECTIONS */
+
+main {
+    margin-top:0.5em;
+    margin-bottom: 0.5em;
+    display: grid;
+    gap:  .8em;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "right right"
+    "left  left";
+}
+
+ .wrapper h1{ 
+    margin: 0;
+    font-size: 4rem;
+    font-weight: 600;
+    color: black;
+    margin-top: 5px;
+    line-height: 1.2em; 
+
+}
+
+.front p{
+     margin-top: 20px;
+    display: inline-block;
+}
+.wrapper{
+    margin:5px ;   
+    display:grid;
+    grid-auto-rows: 70px;
+    grid-row-gap: 16em;
+    
+    }
+
+.wrapper p{
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+.arrow1 {
+    margin: 0;
+    width: 35px;
+    height: 35px;  
+}
+.below{
+    display: flex;
+    gap: 2em;
+    align-items: center;
+}
+
+.below a{
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 600;
+    color: black;
+    text-transform: uppercase;
+    display: inline-block;
+    border: .12em solid black;
+    padding: .5em;
+    border-radius: 20px;
+    width: 10em;
+}
+.below:hover img{
+transform: translateX(10px);
+transition: 600ms;
+}
+
+.left-col{
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.left-col div p{
+    width: 7em;
+    color: white;
+    margin: 0;
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 5px;
+    font-size: .9em;
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 12px;
+}
+
+.section{
+    padding: 10px 20px;
+    border-radius: 2em;
+    display: grid;
+    grid-auto-rows: 20em;
+    position: relative;
+}
+.section-1{
+    width: 82em;
+    height:27.5em;
+    grid-area: right;
+    position: relative;
+    padding: 4em;
+    background: #93d5e1;
+
+}
+
+.right-col{
+    display: grid;
+    gap: .8em;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "left right"
+}
+
+.card{
+    width: 20em;
+    height: 20em;
+    border-radius: 2em;
+    padding: 10px;
+    
+}
+.card1  {
+    display: grid;
+    grid-auto-rows: 7em;
+    grid-row-gap: 6em;
+    grid-area: left;
+    background: #dabda9;
+}
+.card2 {
+    display: grid;
+    grid-auto-rows: 7em;
+    grid-row-gap: 7em;
+    position: relative;
+    grid-area: right;
+    background: #b8c0ff;
+}
+
+.card1 h2{
+    margin: 0;
+    font-size: 4em;
+    font-weight: 600;
+    position: absolute;
+}
+
+.card1 p, .card2 p{
+font-size: 1.5em;
+font-weight:500;
+}
+.card-details1 p{
+margin: 0;
+}
+
+
+.section-3{
+    padding: 0px 0px;
+    background: white;
+}
+.section-2{
+    background-image: url(../images/background.png);
+    background-size: 90%;
+    background-position: center;
+    transition: background-size 800ms;
+}
+.section-2:hover{
+    background-size: 100%;
+
+}
+#image1{
+    position: absolute;
+    margin: 0;
+    width:62em;
+    height: 62em;
+    top: -26.55em;
+    right:-6em ;
+    pointer-events: none;
+}
+.righticon {
+    position: absolute;
+    margin: 0;
+    width: 40px;
+    height: 40px;
+    top: 11px;
+    right:11px;
+}
+.feeds{
+    margin-top: 10px;
+}
+.feeds p{
+    font-size: 1.4em;
+    margin: 0;
+    background: black;
+    color: white;
+    display: inline-block;
+    width: 8em;
+    padding: .6em;
+    border-radius: 3em;
+    text-align: right;
+}
+
+#staricon{
+    position: absolute;
+    margin: 0;
+    width:6em;
+    height: 6em;
+    top: 9em;
+    right: 60em;
+    pointer-events: none;
+}
+.circleicon{
+    position: absolute;
+    margin: 0;
+    width: 35px;
+    height: 35px;
+    top: 16px;
+    right:16px;
+}
+
