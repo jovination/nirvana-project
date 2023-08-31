@@ -8,43 +8,50 @@ body{
  }
 
 header{
-    margin: 0;
-    height: 70px;
+    height: 65px;
     width: 938px;
 }
 .container{
     max-width: 90em;
+    max-height: 65em;
     margin: 0 auto;
+    background: rgb(8, 0, 14);
+    padding: 15px 20px;
+    margin-top: .32em;
+    border-radius: 2em;
 }
 
 .navbar{
+    margin-left: 2em;
     display: grid;
     grid-template-columns: 180px auto;
     align-items: center;
     height: 75px;
 }
 
+
 header nav {
     display: flex;
-    justify-content: space-between ;
+    flex-direction: row;
     padding: 0;
     width: 100%;
-    height: auto;
-    position: unset;
-    background: none;
+    height: 70px;
+    justify-content: center;
     align-items: center;
+    gap: 6em;
+    
 }
 
 nav ul {
     list-style-type: none;
     display: flex;
-    gap: 3em;
+    gap: 2em;
     margin: 0;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 1.4rem;
     position: relative;
 } 
@@ -60,10 +67,10 @@ nav ul li a.active:before{
 
 #logo{
     text-decoration: none;
-    color: black;
+    color: white;
     text-transform: uppercase ;
     font-size: 1.6rem;
-    font-weight: bold;
+    font-weight: 700;
 } 
 
 .primary-nav{
@@ -71,24 +78,35 @@ nav ul li a.active:before{
     margin: 0;
     text-transform: uppercase;
 }
-
-.secondary-nav{
-    background: black;
-    padding: 10px 20px;
-    border-radius: 5em;
+.sec-nav{
+    width:  200px;
+    height: 0px;
+    border-bottom: 58px solid #93d5e1;
+    border-left: 50px solid transparent;
+    position: sticky;
+    margin-right: -12.6em;
+    border-top-right-radius: 2em;
 }
 
 .secondary-nav a{
     margin: 0;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: white;
+    background: rgb(8, 0, 14);
+    padding: 12px 22px;
+    border-radius: 30px;
+    position: absolute;
+    top: 9px;
+    right: 40px;
 }
+
+
 
 /*HERO SECTIONS */
 
 main {
-    margin-top:0.5em;
-    margin-bottom: 0.5em;
+
+    margin: 0 auto;
     display: grid;
     gap:  .8em;
     grid-template-columns: repeat(2, 1fr);
@@ -102,7 +120,6 @@ main {
     font-size: 4rem;
     font-weight: 600;
     color: black;
-    margin-top: 5px;
     line-height: 1.2em; 
 
 }
@@ -112,10 +129,10 @@ main {
     display: inline-block;
 }
 .wrapper{
-    margin:5px ;   
     display:grid;
     grid-auto-rows: 70px;
-    grid-row-gap: 16em;
+    grid-row-gap: 14em;
+    font-family: 'poppins', serif;
     
     }
 
@@ -143,9 +160,9 @@ main {
     text-transform: uppercase;
     display: inline-block;
     border: .12em solid black;
-    padding: .5em;
-    border-radius: 20px;
-    width: 10em;
+    padding: .8em;
+    border-radius: 50px;
+    width: 14em;
 }
 .below:hover img{
 transform: translateX(10px);
@@ -156,10 +173,12 @@ transition: 600ms;
     margin: 0;
     font-size: 1.5em;
     font-weight: 500;
+   
 }
 
-.left-col div p{
-    width: 7em;
+.left-col  p{
+    width: 200px;
+    height: 34px;
     color: white;
     margin: 0;
     display: inline-block;
@@ -170,6 +189,9 @@ transition: 600ms;
     text-align: center;
     margin-top: 5px;
     margin-left: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .section{
@@ -181,20 +203,47 @@ transition: 600ms;
 }
 .section-1{
     width: 82em;
-    height:27.5em;
+    height:25em;
     grid-area: right;
     position: relative;
     padding: 4em;
     background: #93d5e1;
+    border-radius: 2em 0em 2em 2em;
 
 }
 
 .right-col{
-    display: grid;
-    gap: .8em;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: 
-    "left right"
+   display: flex;
+   flex-direction: row;
+   gap: .8em;
+}
+.store-1{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: white;
+    margin-top: 8px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.store-2{
+    position: absolute;
+    top: 18px;
+    right:18px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.store-icon{
+ width: 2em;
+ height: 2em;
 }
 
 .card{
@@ -215,30 +264,42 @@ transition: 600ms;
     display: grid;
     grid-auto-rows: 7em;
     grid-row-gap: 7em;
-    position: relative;
     grid-area: right;
     background: #b8c0ff;
 }
 
-.card1 h2{
+.card-details1 h2{
     margin: 0;
+    margin-left: .3em;
     font-size: 4em;
     font-weight: 600;
-    position: absolute;
 }
 
-.card1 p, .card2 p{
-font-size: 1.5em;
-font-weight:500;
+.card1 p{
+    margin: 0;
+    font-size: 1.3em;
+    font-weight:500;
+}
+.card-details2 p{
+    margin: 0;
+    font-size: 1.6em;
+    font-weight:600;
+    margin-left: 1em;
+}
+.card-details1{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
 }
 .card-details1 p{
-margin: 0;
+margin-left: 1em;
 }
 
 
 .section-3{
-    padding: 0px 0px;
-    background: white;
+   padding: 0;
+   background: none;
 }
 .section-2{
     background-image: url(../images/background.png);
@@ -253,50 +314,60 @@ margin: 0;
 #image1{
     position: absolute;
     margin: 0;
-    width:62em;
-    height: 62em;
-    top: -26.55em;
+    width:60em;
+    height: 60em;
+    top: -27em;
     right:-6em ;
     pointer-events: none;
 }
 .righticon {
-    position: absolute;
     margin: 0;
-    width: 40px;
-    height: 40px;
-    top: 11px;
-    right:11px;
+    width: 35px;
+    height: 35px;
+    
 }
+
 .feeds{
-    margin-top: 10px;
-}
-.feeds p{
-    font-size: 1.4em;
+    font-size: 1.3em;
     margin: 0;
     background: black;
     color: white;
-    display: inline-block;
-    width: 8em;
-    padding: .6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 116px;
+    height: 48px;
     border-radius: 3em;
-    text-align: right;
+    margin-top: 8px;
+    margin-left: 8px;
+
 }
 
 #staricon{
     position: absolute;
     margin: 0;
-    width:6em;
-    height: 6em;
-    top: 9em;
+    width:35px;
+    height: 35px;
+    top: 6em;
     right: 60em;
     pointer-events: none;
 }
 .circleicon{
     position: absolute;
     margin: 0;
-    width: 35px;
-    height: 35px;
-    top: 16px;
-    right:16px;
+    width: 45px;
+    height: 45px;
+    top: 15px;
+    right:15px;
 }
 
+.cir{
+    background: -webkit-linear-gradient(wheat -40%, #93d5e1);
+    position: absolute;
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    top: 15px;
+    right: 124px;
+    
+}
