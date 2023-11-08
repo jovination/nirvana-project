@@ -5,6 +5,10 @@ html {
 
 body{
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 22px;
  }
 
 header{
@@ -13,14 +17,57 @@ header{
 }
 .container{
     max-width: 90em;
-    max-height: 65em;
+    max-height: 70em;
     margin: 0 auto;
     background: rgb(8, 0, 14);
     padding: 15px 20px;
-    margin-top: .32em;
+    margin-top: .5em;
+    margin-bottom: .5em;
     border-radius: 2em;
 }
-
+.container-1{
+    width: 90em;
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+}
+.square{
+    width: 480px;
+    height: 480px;
+    border-radius: 16px;
+    background: black;
+}
+.s1{
+    background-image: url(../images/fashion1.jpg);
+    background-repeat: no-repeat;
+    background-position:bottom center;
+    background-size: cover;
+}
+.s2{
+    background-image: url(../images/fashion2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.s3{
+    background-image: url(../images/fashion3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.s4{
+    background-image: url(../images/fashion4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.left-col-1, .right-col-1{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
 .navbar{
     margin-left: 2em;
     display: grid;
