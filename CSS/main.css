@@ -40,15 +40,16 @@ header{
     width: 90em;
     margin: 0 auto; 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     gap: 25px;
 }
 .square{
-    width: 480px;
-    height: 480px;
+    width: 500px;
+    height: 500px;
     border-radius: 16px;
     background: black;
+
 }
 .s1{
     background-image: url(../images/fashion1.jpg);
@@ -76,8 +77,58 @@ header{
 }
 .left-col-1, .right-col-1{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 25px;
+}
+.text-block{
+    width:90em;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    align-items: center;
+}
+.text-block h1{
+    width: 500px;
+    margin: 0;
+    font-size: 3em;
+    font-weight: 500;
+    color: black;
+    line-height: 1.2em;
+}
+.discount-box{
+    width:  500px;
+    height: 185px;
+    background: #1f3526;
+    border-radius: 20px;
+   
+}
+.db-txt{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 25px;
+}
+.txt-1{
+    width: 104px;
+    margin: 0;
+    font-size: 16px;
+    color: #fff;
+    padding:4px 12px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+}
+.txt-2{
+    margin: 0;
+    font-size: 22px;
+    font-weight: 500;
+    color: #fff;
+}
+.txt-3{
+    margin: 0;
+    font-size: 22px;
+    font-weight: 500;
+    color: #c9f269;
 }
 .navbar{
     margin-left: 2em;
