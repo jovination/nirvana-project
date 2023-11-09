@@ -20,12 +20,23 @@ header{
     max-height: 70em;
     margin: 0 auto;
     background: rgb(8, 0, 14);
-    padding: 15px 20px;
+    padding:  20px;
     margin-top: .5em;
     margin-bottom: .5em;
     border-radius: 2em;
 }
 .container-1{
+
+    margin: 0 auto;
+    display: grid;
+    gap:  15px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "right right"
+    "left  left";
+}
+
+.container-2{
     width: 90em;
     margin: 0 auto; 
     display: flex;
@@ -151,16 +162,6 @@ nav ul li a.active:before{
 
 /*HERO SECTIONS */
 
-main {
-
-    margin: 0 auto;
-    display: grid;
-    gap:  .8em;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: 
-    "right right"
-    "left  left";
-}
 
  .wrapper h1{ 
     margin: 0;
