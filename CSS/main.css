@@ -5,11 +5,12 @@ html {
 
 body{
     width: 1200px;
+    height: 3000px;
     background: #090a0f;
     margin: 0 auto;
     display: flex;
+    align-items: center;
     flex-direction: column;
-    justify-content: center;
     gap: 22px;
  }
 main{
@@ -85,6 +86,12 @@ header{
     flex-direction: column;
     justify-content: center;
     gap: 25px;
+}
+
+.front{
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
 }
 .square{
     width: 480px;
@@ -259,29 +266,27 @@ nav ul li a.active:before{
 
  .wrapper h1{ 
     margin: 0;
-    font-size: 4rem;
+    font-size: 50px;
     font-weight: 600;
     color: black;
     line-height: 1.2em; 
 
 }
 
-.front p{
-     margin-top: 20px;
-    display: inline-block;
-}
+
 .wrapper{
     margin: 35px;
     display:flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 100px;
     font-family: 'poppins', serif;
     
     }
 
 .wrapper p{
+    margin: 0;
     text-transform: uppercase;
-    font-size: 1.2em;
+    font-size: 15px;
 }
 .arrow1 {
     margin: 0;
@@ -359,8 +364,8 @@ transition: 600ms;
     position: absolute;
     top: 18px;
     right:18px;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background: white;
     display: flex;
@@ -436,8 +441,8 @@ margin-left: 1em;
 }
 .righticon {
     margin: 0;
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     
 }
 
@@ -460,10 +465,10 @@ margin-left: 1em;
 #staricon{
     position: absolute;
     margin: 0;
-    width:35px;
-    height: 35px;
-    top: 6em;
-    right: 60em;
+    width:45px;
+    height: 45px;
+    top: 96px;
+    right: 610px;
     pointer-events: none;
 }
 .circleicon{
