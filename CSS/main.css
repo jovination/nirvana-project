@@ -1,11 +1,11 @@
 html {
     font-family: 'poppins';
-    font-size: 66%;
+    font-size: 70%;
 }
 
 body{
-
-    margin: 0;
+    width: 1200px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,10 +14,10 @@ body{
 
 header{
     height: 65px;
-    width: 938px;
+    width: 1100px;
 }
 .wrapper__one{
-    width:950px;
+    width: 1100px;
     height: 660px;
     margin: 0 auto;
     border-radius: 2em;
@@ -36,7 +36,6 @@ header{
     "left  left";
 }
 .wrap{
-    padding: 10px 20px;
     border-radius: 2em;
     display: grid;
     grid-auto-rows: 20em;
@@ -44,11 +43,10 @@ header{
 }
 
 .wrap__01{
-    width: 82em;
-    height:25em;
+    width: 1100px;
+    height:500px;
     grid-area: right;
     position: relative;
-    padding: 4em;
     background: #93d5e1;
     border-radius: 2em 0em 2em 2em;
 
@@ -420,10 +418,10 @@ margin-left: 1em;
 #image1{
     position: absolute;
     margin: 0;
-    width:60em;
-    height: 60em;
-    top: -27em;
-    right:-6em ;
+    width: 800px;
+    height: 800px;
+    top: -300px;
+    right: -100px;
     pointer-events: none;
 }
 .righticon {
@@ -470,10 +468,10 @@ margin-left: 1em;
 .cir{
     background: -webkit-linear-gradient(wheat -40%, #93d5e1);
     position: absolute;
-    width: 230px;
-    height: 230px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
-    top: 15px;
-    right: 124px;
+    top: 55px;
+    right: 130px;
     
 }
