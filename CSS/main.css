@@ -5,12 +5,21 @@ html {
 
 body{
     width: 1200px;
+    background: #090a0f;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 22px;
  }
+main{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 22px;
+}
 
 header{
     height: 65px;
@@ -27,7 +36,6 @@ header{
     width: 100%;
     margin: 0 auto;
     display: grid;
-    background-color: #141823;
     padding: 20px;
     gap:  15px;
     grid-template-columns: repeat(2, 1fr);
@@ -36,9 +44,6 @@ header{
     "left  left";
 }
 .wrap{
-    border-radius: 2em;
-    display: grid;
-    grid-auto-rows: 20em;
     position: relative;
 }
 
@@ -48,16 +53,17 @@ header{
     grid-area: right;
     position: relative;
     background: #93d5e1;
-    border-radius: 2em 0em 2em 2em;
-
+    border-radius: 30px 0px 30px 30px;
 }
 
 
  .wrap__02{
+    width: 580px;
      background-image: url(../images/background.png);
      background-size: 90%;
      background-position: center;
      transition: background-size 800ms;
+     border-radius: 30px;
  }
  .wrap__02:hover{
      background-size: 100%;
@@ -65,8 +71,11 @@ header{
  }
 
  .wrap__03{
-    padding: 0;
-    background: none;
+    width: 505px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
  }
  
 .container-2{
@@ -262,9 +271,10 @@ nav ul li a.active:before{
     display: inline-block;
 }
 .wrapper{
-    display:grid;
-    grid-auto-rows: 70px;
-    grid-row-gap: 14em;
+    margin: 35px;
+    display:flex;
+    flex-direction: column;
+    gap: 50px;
     font-family: 'poppins', serif;
     
     }
@@ -304,7 +314,7 @@ transition: 600ms;
 
 .left-col{
     margin: 0;
-    font-size: 1.5em;
+    font-size: 1;
     font-weight: 500;
    
 }
@@ -332,7 +342,7 @@ transition: 600ms;
 .right-col{
    display: flex;
    flex-direction: row;
-   gap: .8em;
+   gap: 15px;
 }
 .store-1{
     width: 50px;
