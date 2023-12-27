@@ -1,15 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html {
     font-family: 'poppins';
 }
 
-body{
-    width: 1200px;
-    background: #090a0f;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
+
 ::-webkit-scrollbar {
     width: 2px;
   }
@@ -22,13 +21,10 @@ body{
     background-color: #5e5e5e;
   }
 main{
-    width: 1100px;
-    padding: 0;
+    width: 100%;
     margin: 0 auto;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 22px;
+    gap: 25px;
 }
 
 header{
@@ -36,16 +32,22 @@ header{
     width: 1100px;
 }
 
-.container-1{
+.section-1{
+   background: #090a0f;
+   width: 100%;
+   height: 780px;
    display: flex;
-   flex-direction: column;
-   gap: 20px;
+   justify-content: center;
+   align-items: center;   
 }
-.wrapper__02{
+.container-1{
+    width: 1100px;
+    height: 100%;
     display: flex;
-    flex-direction: row;
-    gap: 30px;
+    flex-direction: column;
+    gap: 20px;
 }
+
 
 .wrap__01{
     width: 1100px;
@@ -58,7 +60,8 @@ header{
 
 
  .wrap__02{
-    width: 550px;
+    width: 555px;
+    height: 250px;
      background-image: url(../images/background.png);
      background-size: 90%;
      background-position: center;
@@ -71,16 +74,14 @@ header{
      background-size: 100%;
  
  }
-
- .wrap__03{
-    width: 500px;
+ .wrapper__02{
+    width: 100%;
     height: 250px;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    position: relative;
- }
+}
+
  
 .container-2{
     width: 100%;
@@ -183,11 +184,15 @@ header{
     color: #c9f269;
 }
 header{
-    width: 1100px;
+    width: 100%;
     height: 75px;
+    background: #090a0f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .navbar{
-    width: 100%;
+    width: 1100px;
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -301,11 +306,6 @@ transition: 600ms;
 
 
 
-.right-col{
-   display: flex;
-   flex-direction: row;
-   gap: 15px;
-}
 .store-1 a{
     width: 40px;
     height: 40px;
@@ -336,10 +336,12 @@ transition: 600ms;
 }
 
 .card{
-    width: 220px;
-    height: 220px;
+    width: 250px;
+    height: 250px;
     border-radius: 30px;
-    padding: 15px;
+    padding: 10px;
+    position: relative;
+
     
 }
 .card1  {
