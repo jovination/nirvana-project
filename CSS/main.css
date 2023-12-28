@@ -107,6 +107,7 @@ main{
     display: flex;
     flex-direction: column;
     gap: 15px;
+    z-index: 2;
 }
 .square{
     width: 480px;
@@ -223,13 +224,14 @@ header{
     color: #485B60;
     text-transform: capitalize;
     font-size: 16px;
+    font-weight:500;
 }
 #logo{
     font-family: 'onest', sans-serif;
     text-decoration: none;
     color: #102226;
     font-size: 20px;
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-weight: 800;
 }
 
@@ -416,11 +418,12 @@ transition: 600ms;
 #staricon{
     position: absolute;
     margin: 0;
-    width:45px;
-    height: 45px;
-    top: 96px;
-    right: 610px;
+    width:100px;
+    height: 100px;
+    top: 115px;
+    right: 530px;
     pointer-events: none;
+    z-index: 1;
 }
 .circleicon{
     position: absolute;
@@ -449,5 +452,12 @@ transition: 600ms;
     position: absolute;
     top: 0px;
     right: 30px;
+}
+#staricon-1{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 100px;
+    height: 100px;
 }
 
