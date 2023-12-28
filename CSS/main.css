@@ -5,7 +5,8 @@
 }
 
 html {
-    font-family: 'poppins';
+    font-family: 'poppins', sans-serif;
+    font-family: 'Onest', sans-serif;
 }
 
 
@@ -27,13 +28,10 @@ main{
     gap: 25px;
 }
 
-header{
-    height: 65px;
-    width: 1100px;
-}
+
 
 .section-1{
-   background: #090a0f;
+   background: #fff;
    width: 100%;
    height: 780px;
    display: flex;
@@ -50,14 +48,27 @@ header{
 
 
 .wrap__01{
+    display: flex;
+    flex-direction: row;
     width: 1100px;
-    height:500px;
-    grid-area: right;
+    height:550px;
     position: relative;
-    background: #93d5e1;
-    border-radius: 30px 0px 30px 30px;
+
 }
 
+.left__col{
+    width: 550px;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 110px;
+}
+.right__col{
+    width: 550px;
+    height: 550px;
+   
+}
 
  .wrap__02{
     width: 555px;
@@ -75,7 +86,7 @@ header{
  
  }
  .wrapper__02{
-    width: 100%;
+    width: 1100px;
     height: 250px;
     display: flex;
     justify-content: space-between;
@@ -95,7 +106,7 @@ header{
 .front{
     display: flex;
     flex-direction: column;
-    gap: 55px;
+    gap: 15px;
 }
 .square{
     width: 480px;
@@ -186,7 +197,7 @@ header{
 header{
     width: 100%;
     height: 75px;
-    background: #090a0f;
+    background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -197,7 +208,7 @@ header{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 25em;
+    gap: 34em;
 }
 .primary-nav ul{
     display: flex;
@@ -209,46 +220,40 @@ header{
 }
 .primary-nav li a{
     text-decoration: none;
-    color: #fff;
+    color: #485B60;
     text-transform: capitalize;
-    font-size: 18px;
+    font-size: 16px;
 }
 #logo{
+    font-family: 'onest', sans-serif;
     text-decoration: none;
-    color: #fff;
+    color: #102226;
     font-size: 20px;
     text-transform: uppercase;
-    font-weight: 600;
-    padding-left: 25px;
+    font-weight: 800;
 }
 
 
 /*HERO SECTIONS */
 
 
- .wrapper h1{ 
+ .front h1{ 
+    font-family: 'Onest', sans-serif;
     margin: 0;
-    font-size: 50px;
-    font-weight: 600;
-    color: black;
+    font-size: 60px;
+    font-weight: 700;
+    color: #102226;
     line-height: 1.2em; 
 
 }
 
 
-.wrapper{
-    margin: 35px;
-    display:flex;
-    flex-direction: column;
-    gap: 100px;
-    font-family: 'poppins', serif;
-    
-    }
 
-.wrapper p{
+.front p{
     margin: 0;
     text-transform: uppercase;
     font-size: 15px;
+    color: #485B60;
 }
 .arrow1 {
     margin: 0;
@@ -257,22 +262,22 @@ header{
 }
 .below{
     display: flex;
-    gap: 10px;
     align-items: center;
 }
 
 .below a{
+    width: 160px;
+    height: 50px;
+    background: #1C3F3A;
+    font-family: 'onest';
     text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 14px;
     color: #fff;
-    background: #111;
-    text-transform: uppercase;
-    border-radius: 50px;
-    width: 165px;
-    height: 50px;
+    text-transform: capitalize;
+  
 }
 .below:hover img{
 transform: translateX(10px);
@@ -287,21 +292,19 @@ transition: 600ms;
 }
 
 .left-col  p{
-    width: 200px;
-    height: 34px;
-    color: white;
-    margin: 0;
-    display: inline-block;
-    border: 1px solid white;
-    border-radius: 30px;
-    padding: 5px;
-    font-size: .9em;
-    text-align: center;
-    margin-top: 5px;
-    margin-left: 12px;
+    width: 180px;
+    height: 45px;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
+    border: 1px solid white;
+    border-radius: 30px;
+    font-family: 'onest', sans-serif;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-left: 15px;
+    
 }
 
 
@@ -378,16 +381,13 @@ transition: 600ms;
     flex-direction: column;
 }
 
-
-
 #image1{
-    position: absolute;
     margin: 0;
-    width: 800px;
-    height: 800px;
-    top: -300px;
-    right: -100px;
-    pointer-events: none;
+    width: 460px;
+    position: absolute;
+    top: 18px;
+    right: 50px;
+    z-index: 2;
 }
 .righticon {
     margin: 0;
@@ -432,13 +432,22 @@ transition: 600ms;
 }
 
 .cir{
-    background: -webkit-linear-gradient(wheat -40%, #93d5e1);
+    background: -webkit-linear-gradient(#ECE8D9 -40%, #fff );
     position: absolute;
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
-    top: 55px;
-    right: 130px;
+    top: 40px;
+    right: 99px;
+    z-index: 1;
     
+}
+.card-ui{
+    width: 180px;
+    height: 300px;
+    background: #1C3F3A;
+    position: absolute;
+    top: 0px;
+    right: 30px;
 }
 
