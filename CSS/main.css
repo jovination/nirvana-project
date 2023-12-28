@@ -415,21 +415,21 @@ transition: 600ms;
 
 }
 
-#staricon{
+#staricon {
     position: absolute;
     margin: 0;
-    width:120px;
+    width: 120px;
     height: 120px;
     top: 140px;
     right: 570px;
     pointer-events: none;
-    animation: clockwiseRotation 6s ease-in-out infinite,
-    anticlockwiseRotation 6s ease-in-out infinite;
-transform-origin: center;
+    animation: clockwiseRotation 8s ease-in-out infinite,
+               anticlockwiseRotation 8s ease-in-out infinite;
+    transform-origin: center;
     z-index: 1;
-}
-
-@keyframes clockwiseRotation {
+  }
+  
+  @keyframes clockwiseRotation {
     0%, 100% {
       transform: rotate(0deg);
     }
@@ -439,8 +439,11 @@ transform-origin: center;
     50% {
       transform: rotate(180deg);
     }
+    75% {
+      transform: rotate(270deg);
+    }
   }
-
+  
   @keyframes anticlockwiseRotation {
     0%, 100% {
       transform: rotate(0deg);
@@ -451,8 +454,11 @@ transform-origin: center;
     50% {
       transform: rotate(-180deg);
     }
+    75% {
+      transform: rotate(-270deg);
+    }
   }
-
+  
 .circleicon{
     position: absolute;
     margin: 0;
