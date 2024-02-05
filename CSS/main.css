@@ -317,48 +317,7 @@ transition: 600ms;
     
 }
 
-.card{
-    width: 250px;
-    height: 250px;
-    border-radius: 30px;
-    padding: 10px;
-    position: relative;
 
-    
-}
-.card1  {
-   
-    background: #dabda9;
-}
-.card2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    background: #b8c0ff;
-    gap: 50px;
-}
-
-.card-details1 h2{
-    margin: 0;
-    margin-left: .3em;
-    font-size: 4em;
-    font-weight: 600;
-}
-
-.card1 p{
-    margin: 0;
-    font-size: 1.3em;
-    font-weight:500;
-}
-.card-details2 p{
-    margin: 0;
-}
-.card-details1{
-    width: 100%;
-    height: 80px;
-    display: flex;
-    flex-direction: column;
-}
 
 #image1{
     margin: 0;
@@ -385,10 +344,7 @@ transition: 600ms;
     width: 110px;
     height: 40px;
     border-radius: 30px;
-    /*
-    margin-top: 3px;
-    margin-left: 3px;
-    */
+    
 
 }
 
