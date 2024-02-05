@@ -110,7 +110,7 @@ main{
 .square{
     width: 480px;
     height: 480px;
-    border-radius: 24px;
+    border-radius: 30px;
     display: grid;
     align-items: end;
 
@@ -165,7 +165,7 @@ main{
     width:  485px;
     height: 185px;
     background: #1C3F3A;
-    border-radius: 20px;
+    border-radius: 30px;
     display: flex;
     align-items: center;
    
@@ -473,6 +473,12 @@ transition: 600ms;
     justify-content: center;
     align-items: center;
     transition: all 0.3s ease;
+    flex-direction: row;
+    gap: 10px;
+}
+.arr-an{
+    width: 20px;
+    height: 20px;
 }
 .btn_f_wrap:hover{
     background: #c9f269;
@@ -495,8 +501,8 @@ transition: 600ms;
     font-size: 14px;
 }
 .f_style{
-    width: 196px;
-    height: 151px;
+    width: 210px;
+    height: 155px;
     display: flex;
     flex-direction: column;
     align-items: center;
