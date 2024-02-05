@@ -111,8 +111,8 @@ main{
     width: 480px;
     height: 480px;
     border-radius: 24px;
-    display: flex;
-    align-items: flex-end;
+    display: grid;
+    align-items: end;
 
 }
 .s1{
@@ -467,12 +467,27 @@ transition: 600ms;
 }
 .btn_f_wrap{
     width: 148px;
-    height: 51px;
-    background: #1C3F3A;
+    height: 50px;
     border-radius: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.3s ease;
+}
+.btn_f_wrap:hover{
+    background: #c9f269;
+}
+.btn-s1{
+    background: #496E98;
+}
+.btn-s2{
+    background: #413a37;
+}
+.btn-s3{
+    background: #5e5e5e;
+}
+.btn-s4{
+    background: #dbbe9d;
 }
 .btn_f_wrap a {
     text-decoration: none;
@@ -480,11 +495,20 @@ transition: 600ms;
     font-size: 14px;
 }
 .f_style{
-    width: 194px;
+    width: 196px;
     height: 151px;
-    color: #5B6966;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
+}
+.f_style span{
+    font-size: 28px;
+    color: #fff;
+}
+.f_style p{
+    font-size: 18px;
+    color: #b5b5b5;
+
+    
 }
