@@ -460,6 +460,5 @@ transition: 600ms;
     width: 100%;
 }
 .illustration{
-    width: 120px;
-    transform: rotate(13deg);
+    width: 150px;
 }
