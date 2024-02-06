@@ -493,7 +493,7 @@ transition: 600ms;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 0.3s ease;
+    transition: all 0.1s ease;
     flex-direction: row;
     gap: 10px;
 }
@@ -520,12 +520,12 @@ transition: 600ms;
     .arr-an{
         transform: translateX(10px);
         transition: 500ms;
-        animation: moveAndFadeOut 0.5s ease-out;
+        animation: moveAndFadeOut 0.5s forwards;
     }
     .arr-an1{
         
-        width: 21px;
-        height: 21px;
+        width: 22px;
+        height: 22px;
         display: block;
         transform: translateX(10px);
         transition: 500ms;
