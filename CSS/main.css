@@ -519,7 +519,7 @@ transition: 500ms;
         color: #000;
         font-weight: 500;
         transform: translateX(10px);
-        transition: 500ms;
+        transition: 10ms;
     }
     .arr-an{
         transform: translateX(10px);
