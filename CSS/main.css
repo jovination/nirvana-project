@@ -496,19 +496,61 @@ transition: 600ms;
     transition: all 0.3s ease;
     flex-direction: row;
     gap: 10px;
-    transform: all .5s ease;
 }
 .arr-an{
     width: 20px;
     height: 20px;
 }
+.arr-an1{
+    display: none;
+    width: 25px;
+    height: 25px;
+}
+
+
+
 .btn_f_wrap:hover{
     background: #c9f269;
     & a{
         color: #000;
         font-weight: 500;
+        transform: translateX(10px);
+        transition: 500ms;
+    }
+    .arr-an{
+        transform: translateX(10px);
+        transition: 500ms;
+        animation: moveAndFadeOut 0.5s forwards;
+    }
+    .arr-an1{
+        width: 22px;
+        height: 22px;
+        display: block;
+        transform: translateX(10px);
+        transition: 500ms;
+        animation: moveIn 0.5s forwards;
     }
 }
+@keyframes moveAndFadeOut {
+    0% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(50%);
+      opacity: 0;
+    }
+  }
+  @keyframes moveIn {
+    0% {
+      transform: translateX(0);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(10px);
+      opacity: 1;
+    }
+  }
 .btn-s1{
     background: #496E98;
 }
