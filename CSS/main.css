@@ -496,6 +496,7 @@ transition: 600ms;
     transition: all 0.3s ease;
     flex-direction: row;
     gap: 10px;
+    transform: all .5s ease;
 }
 .arr-an{
     width: 20px;
@@ -503,6 +504,10 @@ transition: 600ms;
 }
 .btn_f_wrap:hover{
     background: #c9f269;
+    & a{
+        color: #000;
+        font-weight: 500;
+    }
 }
 .btn-s1{
     background: #496E98;
