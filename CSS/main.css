@@ -314,8 +314,8 @@ header{
   
 }
 .below:hover img{
-transform: translateX(10px);
-transition: 600ms;
+transform: translateX(5px);
+transition: 500ms;
 }
 
 .left-col{
