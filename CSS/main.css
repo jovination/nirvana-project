@@ -113,6 +113,7 @@ main{
     border-radius: 30px;
     display: grid;
     align-items: end;
+    
 
 }
 .s1{
@@ -120,24 +121,44 @@ main{
     background-repeat: no-repeat;
     background-position:bottom center;
     background-size: cover;
+    background-size: 100%;
+    transition: background-size 400ms;
+    cursor: pointer;
+   
+}
+.s1:hover,
+.s2:hover,
+.s3:hover,
+.s4:hover
+{
+    background-size: 104%;
 }
 .s2{
     background-image: url(../images/fashion2.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-size: 100%;
+    transition: background-size 400ms;
+    cursor: pointer;
 }
 .s3{
     background-image: url(../images/fashion3.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-size: 100%;
+    transition: background-size 400ms;
+    cursor: pointer;
 }
 .s4{
     background-image: url(../images/fashion4.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-size: 100%;
+     transition: background-size 400ms;
+    cursor: pointer;
 }
 .left-col-1, .right-col-1{
     width: 100%;
