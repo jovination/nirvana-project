@@ -520,15 +520,16 @@ transition: 600ms;
     .arr-an{
         transform: translateX(10px);
         transition: 500ms;
-        animation: moveAndFadeOut 0.5s forwards;
+        animation: moveAndFadeOut 0.5s ease-out;
     }
     .arr-an1{
-        width: 22px;
-        height: 22px;
+        
+        width: 21px;
+        height: 21px;
         display: block;
         transform: translateX(10px);
         transition: 500ms;
-        animation: moveIn 0.5s forwards;
+        animation: moveIn 0.5s ease-out;
     }
 }
 @keyframes moveAndFadeOut {
@@ -537,10 +538,11 @@ transition: 600ms;
       opacity: 1;
     }
     100% {
-      transform: translateX(50%);
+      transform: translateX(100%);
       opacity: 0;
     }
   }
+  
   @keyframes moveIn {
     0% {
       transform: translateX(0);
