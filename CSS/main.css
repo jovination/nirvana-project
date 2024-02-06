@@ -529,7 +529,7 @@ transition: 600ms;
         display: block;
         transform: translateX(10px);
         transition: 500ms;
-        animation: moveIn 0.5s ease-out;
+        animation: moveIn 0.4s ease-out;
     }
 }
 @keyframes moveAndFadeOut {
