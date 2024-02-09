@@ -247,7 +247,7 @@ header{
 .primary-nav ul{
     display: flex;
     flex-direction: row;
-    gap: 45px;
+    gap: 40px;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -519,7 +519,7 @@ transition: 500ms;
         color: #000;
         font-weight: 500;
         transform: translateX(10px);
-        transition: 10ms;
+        transition: 400ms;
     }
     .arr-an{
         transform: translateX(10px);
@@ -542,7 +542,7 @@ transition: 500ms;
       opacity: 1;
     }
     100% {
-      transform: translateX(100%);
+      transform: translateX(50%);
       opacity: 0;
     }
   }
